@@ -6,7 +6,7 @@
 	<meta charset="UTF-8">
 	<title>KQXS HCM</title>
 	
-	<!-- Link API Trang kết quả xổ số minhngoc.net.vn -->
+	<!-- Link lấy API từ trang kết quả xổ số minhngoc.net.vn -->
 	<script language="javascript"
 		src="//www.minhngoc.com.vn/jquery/jquery-1.7.2.js"></script>
 	<link rel="stylesheet" type="text/css"
@@ -18,12 +18,8 @@
 		rel="stylesheet"
 		integrity="sha384-iYQeCzEYFbKjA/T2uDLTpkwGzCiq6soy8tYaI1GyVh/UjpbCx/TYkiZhlZB6+fzT"
 		crossorigin="anonymous">
-	
-	<!-- link fontawesome -->
-	<link rel="stylesheet"
-		href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.2.0/css/all.min.css">
-	
-	<!-- Angular js  -->
+		
+	<!-- Angular Js  -->
 	<script
 		src="https://cdnjs.cloudflare.com/ajax/libs/angular.js/1.8.3/angular.min.js"
 		integrity="sha512-KZmyTq3PLx9EZl0RHShHQuXtrvdJ+m35tuOiwlcZfs/rE7NZv29ygNA8SFCkMXTnYZQK2OX0Gm2qKGfvWEtRXA=="
@@ -59,7 +55,6 @@
 					<div class="d-lg-flex justify-content-around">
 						<select name="chontinh" id="tinh-id" class="form-select col-5"
 							aria-label="Default select example" onchange="chonTinhOnChange()">
-
 						</select>
 						<div class="col-2 hidden-lg"></div>
 						<select name="chonngay" id="ngay-id" class="form-select col-5"
@@ -80,9 +75,7 @@
 								style="background-color: #A40E0D; border: none;">Tìm kiếm</button>
 						</div>
 					</div>
-					
 
-					<!-- ERROR FOR MAVE -->
 					<div ng-if="DoKQXS.$submitted || DoKQXS.mave.$dirty" class="mb-4"
 						ng-messages="DoKQXS.mave.$error"
 						style="color: #D10024; margin-left: -58%;" role="alert">
@@ -93,7 +86,7 @@
 							<strong>Nhập số thôii!</strong>
 						</div>
 						<div ng-message="minlength">
-							<strong>HãY nHậP đÚnG!</strong>
+							<strong>Hãy nhập đúng!</strong>
 						</div>
 						<div ng-message-default>
 							<strong>Có gì đó sai sai!</strong>
@@ -101,7 +94,7 @@
 					</div>
 					<button type="submit" class="btn btn-primary rainbow-5" ${disableButton}
 						formaction="/ShowResult"
-						style="background-color: #A40E0D; border: none;" >Nhấp vào đây để đổi đời</button>
+						style="background-color: #A40E0D; border: none;" >Nhấp để đổi đời</button>
 
 					<div class="d-flex" style="margin-left: -30%;">
 						<h1 class="mt-2 text-center">${messages}</h1>

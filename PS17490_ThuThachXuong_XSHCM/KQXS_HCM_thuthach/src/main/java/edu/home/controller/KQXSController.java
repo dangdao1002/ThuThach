@@ -30,39 +30,39 @@ public class KQXSController {
 			isDisableButton = false;
 		}
 		DaySoMaVe daySoModel = splitString();
-		// Check list giải có null hay không
+		// Trường hợp list giải có null hay không
 		if (giai.getTinh() != null && giai.getNgay() != null) {
-			// Check người dùng đã nhập số hay chưa
+			// Trường hợp người dùng đã nhập số hay chưa
 			if (daySoInput != null && daySoModel != null) {
-				// Check giải đặc biệt 
+				// Trường hợp giải đặc biệt 
 				if (giai.getGiaidb().contains(daySoModel.getNum6())) {
 					message = "Chúc mừng bạn đã trúng giải đặc biệt!";
 				} else if (giai.getGiai1().contains(daySoModel.getNum5())){
-					// Check giải nhất
+					// Trường hợp giải nhất
 					message = "Chúc mừng bạn đã trúng giải nhất!";
 				} else if (giai.getGiai2().contains(daySoModel.getNum5())){
-					// Check giải nhì
+					// Trường hợp giải nhì
 					message = "Chúc mừng bạn đã trúng giải nhì!";
 				} else if (giai.getGiai3().contains(daySoModel.getNum5())){
-					// Check giải ba
+					// Trường hợp giải ba
 					message = "Chúc mừng bạn đã trúng giải ba!";
 				} else if (giai.getGiai4().contains(daySoModel.getNum5())){
-					// Check giải bốn
+					// Trường hợp giải bốn
 					message = "Chúc mừng bạn đã trúng giải bốn!";
 				} else if (giai.getGiai5().contains(daySoModel.getNum4())){
-					// Check giải năm
+					// Trường hợp giải năm
 					message = "Chúc mừng bạn đã trúng giải năm!";
 				} else if (giai.getGiai6().contains(daySoModel.getNum4())){
-					// Check giải sáu
+					// Trường hợp giải sáu
 					message = "Chúc mừng bạn đã trúng giải sáu!";
 				} else if (giai.getGiai7().contains(daySoModel.getNum3())){
-					// Check giải bảy
+					// Trường hợp giải bảy
 					message = "Chúc mừng bạn đã trúng giải bảy!";
 				} else if (giai.getGiai8().contains(daySoModel.getNum2())){
-					// Check giải tám
+					// Trường hợp giải tám
 					message = "Chúc mừng bạn đã trúng giải tám!";
 				} else {
-					// Check không trúng giải
+					// Trường hợp không trúng giải
 					message = "Chúc bạn may mắn lần sau!";
 				}
 			}

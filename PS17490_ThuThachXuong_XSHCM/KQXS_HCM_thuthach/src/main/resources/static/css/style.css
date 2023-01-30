@@ -6,18 +6,6 @@ a {
 	transition: 0.2s color;
 }
 
-a:hover, a:focus {
-	color: #D10024;
-	text-decoration: none;
-	outline: none;
-}
-
-ul, ol {
-	margin: 0;
-	padding: 0;
-	list-style: none;
-}
-
 .rainbow-5:hover{
    background-image:     linear-gradient(
       to right, 
@@ -45,6 +33,13 @@ ul, ol {
     background-position:20vw;
   }
 }
+
+a:hover, a:focus {
+	color: #D10024;
+	text-decoration: none;
+	outline: none;
+}
+
 h3{
 		  font-size: 5rem;
 	    text-align: center;
@@ -63,4 +58,10 @@ h3{
                   35px 35px 0px #c11a2b, 
                   40px 40px 0px #c11a2b, 
                   45px 45px 0px #c11a2b;
+}
+
+ul, ol {
+	margin: 0;
+	padding: 0;
+	list-style: none;
 }
